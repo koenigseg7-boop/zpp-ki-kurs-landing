@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
-import logoImage from 'figma:asset/18d3f0e8c8313ef5fb34d938a8b809662e720ef5.png';
+const logoImage = "";
 
 export function ScrollProgressBar() {
   const [scrollProgress, setScrollProgress] = useState(0);
