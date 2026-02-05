@@ -3,8 +3,10 @@ import { ScrollReveal } from '@/app/components/ScrollReveal';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { CheckCircle2 } from 'lucide-react';
 import { WaveDivider } from '@/app/components/WaveDivider';
-const raoulImage = "";
-const alexanderImage = "";
+import raoulImage from "<div styleName={} />
+<assets />
+<Raoul></Raoul>.png";
+import alexanderImage from "../assets/Alexander.png";
 
 const trainers = [
   {

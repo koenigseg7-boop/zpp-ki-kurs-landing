@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
-const logoImage = "";
+import logoImage from "<div styleName={} />
+<assets />
+<ZPP></ZPP>.png";
 import { PrimaryButton } from './PrimaryButton';
 
 interface HeaderProps {
