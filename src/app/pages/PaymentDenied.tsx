@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { XCircle, RefreshCw, Mail, Phone, HelpCircle, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router';
-const logoImage = "";
+import logoImage from 'figma:asset/18d3f0e8c8313ef5fb34d938a8b809662e720ef5.png';
 import { PremiumBackground } from '@/app/components/PremiumBackground';
 
 export function PaymentDenied() {

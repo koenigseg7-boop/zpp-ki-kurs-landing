@@ -207,11 +207,10 @@ export function Pricing({ onBookClick }: PricingProps) {
             {/* Payment methods */}
             <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 lg:p-10 border border-white/10">
               <h3 className="font-semibold text-white mb-8 text-center text-xl">Flexible Zahlungsmöglichkeiten</h3>
-              <div className="grid sm:grid-cols-3 gap-6 text-center">
+              <div className="grid sm:grid-cols-2 gap-6 text-center max-w-2xl mx-auto">
                 {[
                   { icon: '💳', title: 'Kreditkarte', desc: 'Visa, Mastercard' },
                   { icon: '🏦', title: 'Überweisung', desc: 'Rechnung per E-Mail' },
-                  { icon: '📧', title: 'PayPal', desc: 'Schnell & sicher' }
                 ].map((method, index) => (
                   <motion.div
                     key={index}

@@ -261,7 +261,7 @@ export function BookingForm({ isOpen, onClose }: BookingFormProps) {
                   <div>
                     <h4 className="font-semibold text-blue-100 mb-1">Sichere Zahlung</h4>
                     <p className="text-sm text-blue-200/70 leading-relaxed">
-                      Sie werden zu Stripe weitergeleitet für eine sichere Zahlung per Kreditkarte oder PayPal.
+                      Sie werden zu Stripe weitergeleitet für eine sichere Zahlung.
                     </p>
                   </div>
                 </div>

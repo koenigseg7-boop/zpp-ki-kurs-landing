@@ -7,6 +7,7 @@ import { Admin } from "./pages/Admin";
 import { Impressum } from "./pages/Impressum";
 import { Datenschutz } from "./pages/Datenschutz";
 import { AGB } from "./pages/AGB";
+import EmailTest from "./pages/EmailTest";
 
 export const router = createBrowserRouter([
   {
@@ -40,5 +41,9 @@ export const router = createBrowserRouter([
   {
     path: "/agb",
     Component: AGB,
+  },
+  {
+    path: "/email-test",
+    Component: EmailTest,
   },
 ]);

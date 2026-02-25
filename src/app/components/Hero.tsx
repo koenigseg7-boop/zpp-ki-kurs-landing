@@ -4,6 +4,7 @@ import { PremiumCTAButton } from '@/app/components/PremiumCTAButton';
 import { HologramCard } from '@/app/components/HologramCard';
 import { AnimatedCounter } from '@/app/components/AnimatedCounter';
 import { ScrollIndicator } from '@/app/components/ScrollIndicator';
+import heroImage from 'figma:asset/b351e87776ca5157b00564fe577be67fd0cc2346.png';
 
 interface HeroProps {
   onBookClick: () => void;
@@ -117,8 +118,8 @@ export function Hero({ onBookClick }: HeroProps) {
           className="max-w-5xl mx-auto"
         >
           <HologramCard
-            src="https://images.unsplash.com/photo-1633311905139-7b6088a69e33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBidXNpbmVzcyUyMHRyYWluaW5nfGVufDF8fHx8MTc3MDEyNjMyNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="KI Training"
+            src={heroImage}
+            alt="KI Training Workshop"
           />
         </motion.div>
 
