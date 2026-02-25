@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { projectId, publicAnonKey } from '/utils/supabase/info';
+import { projectId, publicAnonKey } from '../../../utils/supabase/info';
 
 export default function EmailTest() {
   const [email, setEmail] = useState('info@zwischenpromptundpanik.de');
