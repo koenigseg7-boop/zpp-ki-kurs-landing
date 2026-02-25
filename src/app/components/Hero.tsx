@@ -4,7 +4,8 @@ import { PremiumCTAButton } from '@/app/components/PremiumCTAButton';
 import { HologramCard } from '@/app/components/HologramCard';
 import { AnimatedCounter } from '@/app/components/AnimatedCounter';
 import { ScrollIndicator } from '@/app/components/ScrollIndicator';
-import heroImage from 'figma:asset/b351e87776ca5157b00564fe577be67fd0cc2346.png';
+
+const heroImage = '/images/hero.png';
 
 interface HeroProps {
   onBookClick: () => void;

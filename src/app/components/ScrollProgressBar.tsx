@@ -1,6 +1,6 @@
-import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
-import logoImage from 'figma:asset/18d3f0e8c8313ef5fb34d938a8b809662e720ef5.png';
+
+const logoImage = '/images/logo.png';
 
 export function ScrollProgressBar() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -46,13 +46,11 @@ export function ScrollProgressBar() {
   };
 
   return (
-    <motion.div
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
+    <div
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/60 border-b border-white/5"
     >
       {/* Progress bar */}
-      <motion.div
+      <div
         className="h-0.5 bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500 origin-left"
         style={{ scaleX: scrollProgress }}
       />
@@ -61,9 +59,7 @@ export function ScrollProgressBar() {
       <div className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo with Glow Effect */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+          <div
             className="relative"
           >
             <div className="absolute inset-0 blur-xl opacity-50 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" />
@@ -72,7 +68,7 @@ export function ScrollProgressBar() {
               alt="ZPP Logo" 
               className="h-12 w-auto relative z-10"
             />
-          </motion.div>
+          </div>
           
           <nav className="hidden md:flex gap-1">
             {sections.map((section) => (
@@ -98,6 +94,6 @@ export function ScrollProgressBar() {
           </button>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

@@ -1,8 +1,9 @@
 import { motion } from 'motion/react';
 import { ArrowLeft, Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router';
-import logoImage from 'figma:asset/18d3f0e8c8313ef5fb34d938a8b809662e720ef5.png';
 import { PremiumBackground } from '@/app/components/PremiumBackground';
+
+const logoImage = '/images/logo.png';
 
 export function Impressum() {
   return (
@@ -13,23 +14,14 @@ export function Impressum() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
         
         {/* Back Button */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
-          <Link to="/">
-            <motion.button
-              whileHover={{ scale: 1.05, x: -4 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-6 py-3 bg-white/5 backdrop-blur-sm border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all"
-            >
-              <ArrowLeft className="w-5 h-5" />
-              Zurück zur Startseite
-            </motion.button>
-          </Link>
-        </motion.div>
+        <Link to="/">
+          <button
+            className="flex items-center gap-2 px-6 py-3 bg-white/5 backdrop-blur-sm border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            Zurück zur Startseite
+          </button>
+        </Link>
 
         {/* Logo */}
         <motion.div

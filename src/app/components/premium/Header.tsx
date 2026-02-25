@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
-import logoImage from 'figma:asset/18d3f0e8c8313ef5fb34d938a8b809662e720ef5.png';
 import { PrimaryButton } from './PrimaryButton';
+
+const logoImage = '/images/logo.png';
 
 interface HeaderProps {
   onBookClick: () => void;
