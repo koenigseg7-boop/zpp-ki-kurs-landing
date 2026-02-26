@@ -5,7 +5,7 @@ import { HologramCard } from '@/app/components/HologramCard';
 import { AnimatedCounter } from '@/app/components/AnimatedCounter';
 import { ScrollIndicator } from '@/app/components/ScrollIndicator';
 
-const heroImage = '/images/hero.png';
+import heroImage from 'figma:asset/64daa4409054f7283e007704247e39484f16fd92.png';
 
 interface HeroProps {
   onBookClick: () => void;
