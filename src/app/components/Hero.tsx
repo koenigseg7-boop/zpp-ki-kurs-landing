@@ -5,8 +5,6 @@ import { HologramCard } from '@/app/components/HologramCard';
 import { AnimatedCounter } from '@/app/components/AnimatedCounter';
 import { ScrollIndicator } from '@/app/components/ScrollIndicator';
 
-import heroImage from 'figma:asset/64daa4409054f7283e007704247e39484f16fd92.png';
-
 interface HeroProps {
   onBookClick: () => void;
 }
@@ -119,7 +117,7 @@ export function Hero({ onBookClick }: HeroProps) {
           className="max-w-5xl mx-auto"
         >
           <HologramCard
-            src={heroImage}
+            src="/images/hero.png"
             alt="KI Training Workshop"
           />
         </motion.div>
