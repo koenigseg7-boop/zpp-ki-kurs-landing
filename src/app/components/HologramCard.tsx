@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useTransform, useSpring } from 'motion/react';
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState } from 'react';
 
 interface HologramCardProps {
