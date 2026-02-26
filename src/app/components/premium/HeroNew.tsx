@@ -153,7 +153,7 @@ export function HeroNew({ onBookClick }: HeroNewProps) {
               <div className="absolute inset-0 bg-gradient-to-br from-accent-amber/10 via-transparent to-accent-blue/10 z-10 pointer-events-none" />
               
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
+                src="/images/hero.png"
                 alt="KI Workshop"
                 className="w-full h-auto"
               />
