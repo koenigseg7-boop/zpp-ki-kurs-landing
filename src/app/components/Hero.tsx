@@ -39,7 +39,7 @@ export function Hero({ onBookClick }: HeroProps) {
           >
             <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-400 bg-blue-500/10 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-500/20">
               <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
-              Teuterhof Düren • 7. März 2026 • 09:00 - 15:00
+              Teuterhof Düren • 4. April 2026 • 09:00 - 15:00
             </span>
           </motion.div>
           

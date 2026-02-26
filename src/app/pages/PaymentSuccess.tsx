@@ -143,7 +143,7 @@ export function PaymentSuccess() {
                 </div>
                 <div>
                   <div className="text-sm text-gray-500 uppercase tracking-wider mb-1">Datum & Zeit</div>
-                  <div className="text-white font-semibold">7. März 2026 • 09:00 - 15:00 Uhr</div>
+                  <div className="text-white font-semibold">4. April 2026 • 09:00 - 15:00 Uhr</div>
                 </div>
                 <div>
                   <div className="text-sm text-gray-500 uppercase tracking-wider mb-1">Location</div>

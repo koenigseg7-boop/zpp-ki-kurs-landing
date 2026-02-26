@@ -479,7 +479,7 @@ app.post("/make-server-98da7db4/test-email", async (c) => {
       email: email,
       phone: "+49 151 12345678",
       company: "Mustermann GmbH",
-      date: "15. März 2026, 10:00 Uhr",
+      date: "4. April 2026, 09:00 Uhr",
       amount: 299
     };
 

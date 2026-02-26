@@ -165,7 +165,7 @@ export default function EmailTest() {
               <ul className="text-gray-400 text-sm space-y-1">
                 <li>• Die Test-E-Mails verwenden Beispieldaten</li>
                 <li>• Name: Max Mustermann</li>
-                <li>• Termin: 15. März 2026, 10:00 Uhr</li>
+                <li>• Termin: 4. April 2026, 09:00 Uhr</li>
                 <li>• Betrag: 299,00 €</li>
               </ul>
             </div>

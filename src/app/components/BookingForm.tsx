@@ -17,7 +17,7 @@ export function BookingForm({ isOpen, onClose }: BookingFormProps) {
     email: '',
     phone: '',
     company: '',
-    date: '7-march',
+    date: '4-april',
     message: ''
   });
   const [isProcessing, setIsProcessing] = useState(false);
@@ -219,23 +219,11 @@ export function BookingForm({ isOpen, onClose }: BookingFormProps) {
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">
                     <Calendar className="w-4 h-4 inline mr-2 text-gray-500" />
-                    Gewünschter Termin *
+                    Termin
                   </label>
                   <div className="relative">
-                    <select
-                      name="date"
-                      value={formData.date}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3.5 bg-[#131722] border border-white/5 rounded-2xl text-white focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all outline-none appearance-none"
-                    >
-                      <option value="7-march">7. März 2026 (Frühbucher)</option>
-                      <option value="11-12-april">11. - 12. April 2026</option>
-                      <option value="16-17-may">16. - 17. Mai 2026</option>
-                      <option value="13-14-june">13. - 14. Juni 2026</option>
-                    </select>
-                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                      <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
+                    <div className="w-full px-4 py-3.5 bg-[#131722] border border-white/5 rounded-2xl text-white">
+                      4. April 2026
                     </div>
                   </div>
                 </div>

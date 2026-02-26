@@ -66,10 +66,7 @@ export function Admin() {
 
   const getDateLabel = (dateKey: string) => {
     const labels: Record<string, string> = {
-      '7-march': '7. März 2026',
-      '11-12-april': '11.-12. April 2026',
-      '16-17-may': '16.-17. Mai 2026',
-      '13-14-june': '13.-14. Juni 2026',
+      '4-april': '4. April 2026',
     };
     return labels[dateKey] || dateKey;
   };
