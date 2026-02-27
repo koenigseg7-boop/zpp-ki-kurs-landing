@@ -279,3 +279,4 @@ export function PaymentSuccess() {
       </div>
     </div>
   );
+  }
