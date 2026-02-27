@@ -8,18 +8,14 @@ const logoImage = '/images/logo.png';
 
 export function PaymentSuccess() {
  useEffect(() => {
-    // Meta Purchase Event (nur wenn fbq verfügbar ist)
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "Purchase", {
-        value: 299,
-        currency: "EUR",
-      });
-    }
-  }, []);
-
-  return (
-    ...
-  );
+  // Meta Purchase Event (nur wenn fbq verfügbar ist)
+  if (typeof window !== "undefined" && (window as any).fbq) {
+    (window as any).fbq("track", "Purchase", {
+      value: 299,
+      currency: "EUR",
+    });
+  }
+}, []);
 }
   return (
     <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center">
