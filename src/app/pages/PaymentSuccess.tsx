@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion } from 'motion/react';
 import { CheckCircle2, Download, Calendar, Mail, ArrowRight, Sparkles } from 'lucide-react';
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { PremiumBackground } from '@/app/components/PremiumBackground';
 
 const logoImage = '/images/logo.png';
