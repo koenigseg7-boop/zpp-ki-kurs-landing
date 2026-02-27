@@ -16,7 +16,7 @@ export function PaymentSuccess() {
     });
   }
 }, []);
-}
+
   return (
     <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center">
       {/* Premium Background with Spotlights & Grain */}
