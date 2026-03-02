@@ -1,21 +1,22 @@
-import { useEffect } from "react";
 import { motion } from 'motion/react';
-import { CheckCircle2, Download, Calendar, Mail, ArrowRight, Sparkles } from 'lucide-react';
-import { Link } from "react-router";
+import { CheckCircle2, Calendar, Mail } from 'lucide-react';
+import { Link } from 'react-router';
 import { PremiumBackground } from '@/app/components/PremiumBackground';
+import { useEffect } from 'react';
 
 const logoImage = '/images/logo.png';
 
 export function PaymentSuccess() {
- useEffect(() => {
-  // Meta Purchase Event (nur wenn fbq verfügbar ist)
-  if (typeof window !== "undefined" && (window as any).fbq) {
-    (window as any).fbq("track", "Purchase", {
-      value: 299,
-      currency: "EUR",
-    });
-  }
-}, []);
+  useEffect(() => {
+    // Fire Meta Pixel Purchase event on successful payment
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Purchase', {
+        value: 299.00,
+        currency: 'EUR',
+        content_name: 'KI-Kurs für Unternehmer – Düren',
+      });
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center">
@@ -154,7 +155,7 @@ export function PaymentSuccess() {
                 </div>
                 <div>
                   <div className="text-sm text-gray-500 uppercase tracking-wider mb-1">Datum & Zeit</div>
-                  <div className="text-white font-semibold">4. April 2026 • 09:00 - 15:00 Uhr</div>
+                  <div className="text-white font-semibold">18. April 2026 • 09:00 - 15:00 Uhr</div>
                 </div>
                 <div>
                   <div className="text-sm text-gray-500 uppercase tracking-wider mb-1">Location</div>
@@ -202,51 +203,6 @@ export function PaymentSuccess() {
           </div>
         </motion.div>
 
-        {/* Resources */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 mb-12"
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
-              <Sparkles className="w-6 h-6 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-white">Vorbereitung</h3>
-          </div>
-          
-          <p className="text-gray-300 mb-6 leading-relaxed">
-            Um das Beste aus Ihrem KI-Kurs herauszuholen, empfehlen wir:
-          </p>
-          
-          <div className="grid sm:grid-cols-2 gap-4">
-            <motion.button
-              whileHover={{ scale: 1.02, x: 4 }}
-              whileTap={{ scale: 0.98 }}
-              className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/10 hover:border-purple-500/50 transition-all group"
-            >
-              <div className="flex items-center gap-3">
-                <Download className="w-5 h-5 text-purple-400" />
-                <span className="text-white font-medium">Vorbereitungs-Checkliste</span>
-              </div>
-              <ArrowRight className="w-5 h-5 text-gray-500 group-hover:text-purple-400 transition-colors" />
-            </motion.button>
-            
-            <motion.button
-              whileHover={{ scale: 1.02, x: 4 }}
-              whileTap={{ scale: 0.98 }}
-              className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-all group"
-            >
-              <div className="flex items-center gap-3">
-                <Calendar className="w-5 h-5 text-blue-400" />
-                <span className="text-white font-medium">Zum Kalender hinzufügen</span>
-              </div>
-              <ArrowRight className="w-5 h-5 text-gray-500 group-hover:text-blue-400 transition-colors" />
-            </motion.button>
-          </div>
-        </motion.div>
-
         {/* Contact & Home Button */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -279,4 +235,4 @@ export function PaymentSuccess() {
       </div>
     </div>
   );
-  }
+}

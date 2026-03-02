@@ -266,7 +266,7 @@ app.use(
 
 // Health check endpoint
 app.get("/make-server-98da7db4/health", (c) => {
-  return c.json({ status: "ok", version: "1.1.0", timestamp: new Date().toISOString() });
+  return c.json({ status: "ok" });
 });
 
 // Create Stripe Checkout Session
@@ -420,8 +420,8 @@ app.post("/make-server-98da7db4/stripe-webhook", async (c) => {
         console.log(`Payment confirmed for booking: ${booking.value.id}`);
 
         // Send notifications
-        const { firstName, lastName, email, phone, date } = booking.value;
-        const adminEmail = Deno.env.get("ADMIN_EMAIL") || "info@zwischenpromptundpanik.de";
+        const { firstName, email, phone, date } = booking.value;
+        const adminEmail = Deno.env.get("ADMIN_EMAIL");
 
         // 1. Email to Customer
         await sendEmail(
@@ -479,7 +479,7 @@ app.post("/make-server-98da7db4/test-email", async (c) => {
       email: email,
       phone: "+49 151 12345678",
       company: "Mustermann GmbH",
-      date: "18. April 2026, 09:00 Uhr",
+      date: "4. April 2026, 09:00 Uhr",
       amount: 299
     };
 

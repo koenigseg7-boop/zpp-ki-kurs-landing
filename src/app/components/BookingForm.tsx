@@ -223,7 +223,7 @@ export function BookingForm({ isOpen, onClose }: BookingFormProps) {
                   </label>
                   <div className="relative">
                     <div className="w-full px-4 py-3.5 bg-[#131722] border border-white/5 rounded-2xl text-white">
-                      4. April 2026
+                      18. April 2026
                     </div>
                   </div>
                 </div>

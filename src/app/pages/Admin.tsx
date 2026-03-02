@@ -66,7 +66,7 @@ export function Admin() {
 
   const getDateLabel = (dateKey: string) => {
     const labels: Record<string, string> = {
-      '4-april': '4. April 2026',
+      '4-april': '18. April 2026',
     };
     return labels[dateKey] || dateKey;
   };
